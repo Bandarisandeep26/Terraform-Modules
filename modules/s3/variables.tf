@@ -3,11 +3,12 @@ variable "bucket_count" {
   default     = 1
 }
 
-variable "bucket_name_prefix" {
-  type        = string
-}
-
 variable "tags" {
   type        = map(string)
   default     = {}
+}
+
+variable "bucket_name_prefix" {
+  description = "Prefix for S3 buckets"
+  type        = string
 }
